@@ -12,19 +12,23 @@
         padding: 0;
         background: #f5f5f5;
         line-height: 1.5;
+        padding-bottom: 140px; /* espacio para los botones fijos */
     }
 
-    /* HERO */
+    /* HERO FIJO */
     .hero {
         background: white;
         padding: 18px;
         text-align: center;
         border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+        z-index: 10;
     }
 
     .hero img {
         width: 100%;
-        height: 180px; /* Escritorio */
+        height: 180px;
         object-fit: cover;
         border-radius: 6px;
         margin-bottom: 15px;
@@ -32,7 +36,7 @@
 
     @media (max-width: 600px) {
         .hero img {
-            height: 120px; /* ← Altura ideal en móvil */
+            height: 150px;
         }
     }
 
@@ -61,13 +65,25 @@
         color: #555;
     }
 
-    .cta button {
+    /* BOTONES FIJOS ABAJO */
+    .cta-fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 12px;
+        box-shadow: 0 -3px 10px rgba(0,0,0,0.15);
+        z-index: 20;
+    }
+
+    .cta-fixed button {
         width: 100%;
         padding: 14px;
         font-size: 18px;
         border: none;
         border-radius: 6px;
-        margin-top: 16px;
+        margin-top: 10px;
         cursor: pointer;
     }
 
@@ -79,7 +95,6 @@
     .llamar {
         background: #007bff;
         color: white;
-        margin-top: 10px;
     }
 
     /* SECCIONES */
@@ -108,27 +123,14 @@
         border: 1px solid #ccc;
         font-size: 16px;
     }
-
-    .enviar {
-        background: #25D366;
-        color: white;
-        border: none;
-        padding: 14px;
-        font-size: 18px;
-        border-radius: 6px;
-        margin-top: 16px;
-        width: 100%;
-        cursor: pointer;
-    }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
+<!-- HERO FIJO -->
 <div class="hero">
     <img src="images/imagen.png" alt="Curso Excel Aluche">
-
 
     <h1>Curso de Excel desde Cero</h1>
     <div class="sub">Clases presenciales en Aluche. Grupos reducidos.</div>
@@ -139,11 +141,6 @@
         🕒 Horarios flexibles<br>
         👩‍🏫 Desde cero<br>
         🧾 Certificado incluido
-    </div>
-
-    <div class="cta">
-        <button class="whatsapp">Quiero información por WhatsApp</button>
-        <button class="llamar">Llamar ahora</button>
     </div>
 </div>
 
@@ -179,8 +176,13 @@
     <input type="text" placeholder="Tu nombre">
     <input type="text" placeholder="Tu teléfono">
     <textarea placeholder="Tu mensaje"></textarea>
-    <button class="enviar">Enviar</button>
 </section>
+
+<!-- BOTONES FIJOS -->
+<div class="cta-fixed">
+    <button class="whatsapp">Quiero información por WhatsApp</button>
+    <button class="llamar">Llamar ahora</button>
+</div>
 
 </body>
 </html>
