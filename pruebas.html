@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulación Landing Completa</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        line-height: 1.5;
+    }
+
+    /* HERO */
+    .hero {
+        background: white;
+        padding: 18px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 180px; /* Escritorio */
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 15px;
+    }
+
+    @media (max-width: 600px) {
+        .hero img {
+            height: 120px; /* ← Altura ideal en móvil */
+        }
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .sub {
+        font-size: 16px;
+        color: #444;
+        margin-top: 6px;
+    }
+
+    .precio {
+        font-size: 18px;
+        font-weight: bold;
+        color: #1a8917;
+        margin-top: 10px;
+    }
+
+    .beneficios {
+        margin-top: 12px;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .cta button {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
+        border: none;
+        border-radius: 6px;
+        margin-top: 16px;
+        cursor: pointer;
+    }
+
+    .whatsapp {
+        background: #25D366;
+        color: white;
+    }
+
+    .llamar {
+        background: #007bff;
+        color: white;
+        margin-top: 10px;
+    }
+
+    /* SECCIONES */
+    section {
+        background: white;
+        padding: 20px;
+        margin-top: 12px;
+        border-radius: 6px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    ul {
+        padding-left: 18px;
+    }
+
+    /* FORMULARIO */
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    .enviar {
+        background: #25D366;
+        color: white;
+        border: none;
+        padding: 14px;
+        font-size: 18px;
+        border-radius: 6px;
+        margin-top: 16px;
+        width: 100%;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="imagen.png" alt="Curso Excel Aluche">
+
+    <h1>Curso de Excel desde Cero</h1>
+    <div class="sub">Clases presenciales en Aluche. Grupos reducidos.</div>
+    <div class="precio">Desde 49 €/mes — Plazas limitadas</div>
+
+    <div class="beneficios">
+        📍 Presencial en Aluche<br>
+        🕒 Horarios flexibles<br>
+        👩‍🏫 Desde cero<br>
+        🧾 Certificado incluido
+    </div>
+
+    <div class="cta">
+        <button class="whatsapp">Quiero información por WhatsApp</button>
+        <button class="llamar">Llamar ahora</button>
+    </div>
+</div>
+
+<!-- SECCIÓN 1 -->
+<section>
+    <h2>¿Qué aprenderás?</h2>
+    <p>Un curso práctico pensado para personas que empiezan desde cero. Aprenderás:</p>
+    <ul>
+        <li>Crear y editar hojas de cálculo</li>
+        <li>Fórmulas básicas</li>
+        <li>Formato profesional</li>
+        <li>Gráficos</li>
+        <li>Funciones esenciales</li>
+    </ul>
+</section>
+
+<!-- SECCIÓN 2 -->
+<section>
+    <h2>Horarios disponibles</h2>
+    <p>Tenemos horarios flexibles de mañana y tarde. Grupos reducidos para garantizar tu aprendizaje.</p>
+</section>
+
+<!-- SECCIÓN 3 -->
+<section>
+    <h2>Opiniones de alumnos</h2>
+    <p>⭐⭐⭐⭐⭐ “Aprendí desde cero y ahora uso Excel en mi trabajo.”</p>
+    <p>⭐⭐⭐⭐⭐ “Clases muy claras y profesor muy paciente.”</p>
+</section>
+
+<!-- FORMULARIO -->
+<section>
+    <h2>Solicita información</h2>
+    <input type="text" placeholder="Tu nombre">
+    <input type="text" placeholder="Tu teléfono">
+    <textarea placeholder="Tu mensaje"></textarea>
+    <button class="enviar">Enviar</button>
+</section>
+
+</body>
+</html>
