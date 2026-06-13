@@ -9,10 +9,12 @@
     max-width: 480px;
     height: 160px !important;
     object-fit: cover !important;
+    object-position: bottom center !important;
     border-radius: 8px;
     display: block;
     margin: 0 auto;
 }
+
 
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
