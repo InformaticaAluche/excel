@@ -74,4 +74,35 @@
 </div>
 
 </body>
+
+/* Contenedor horizontal del badge + botón */
+.precio-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Botón inline con icono */
+.btn-w-inline {
+    background: #25D366;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+/* Icono pequeño */
+.w-icon {
+    width: 16px;
+    height: 16px;
+}
 </html>
+
