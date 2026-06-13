@@ -1,81 +1,26 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso Excel Aluche</title>
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 20px;
+}
 
-    <link rel="stylesheet" href="styles.css">
-</head>
+.hero img {
+    width: 100%;
+    border-radius: 8px;
+}
 
-<body>
+h1 {
+    font-size: 26px;
+    margin-top: 15px;
+}
 
-<!-- HERO FIJO Y COMPACTO -->
-<div class="hero">
-    <img src="images/imagen.png" alt="Curso Excel Aluche">
+.sub {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
 
-    <h1>Curso de Excel desde Cero</h1>
-    <div class="sub">Clases presenciales en Aluche</div>
-
-    <!-- Badge + WhatsApp en línea -->
-    <div class="precio-row">
-        <div class="precio badge">Duración 20h — 210€</div>
-
-        <a href="https://wa.me/34TU_NUMERO" class="btn-w-inline">
-            <img src="images/whatsapp.png" alt="WhatsApp" class="w-icon">
-            WhatsApp
-        </a>
-    </div>
-
-    <div class="beneficios">
-        📍 Aluche · ⏰ Horarios flexibles<br>
-        🧩 Desde cero · 🎓 Certificado
-    </div>
-</div>
-
-<!-- SECCIÓN 1 -->
-<section>
-    <h2>¿Qué aprenderás?</h2>
-    <p>Un curso práctico pensado para personas que empiezan desde cero. Aprenderás:</p>
-    <ul>
-        <li>Crear y editar hojas de cálculo</li>
-        <li>Fórmulas básicas</li>
-        <li>Formato profesional</li>
-        <li>Gráficos</li>
-        <li>Funciones esenciales</li>
-    </ul>
-</section>
-
-<!-- SECCIÓN 2 -->
-<section>
-    <h2>Horarios disponibles</h2>
-    <p>Tenemos horarios flexibles de mañana y tarde. Grupos reducidos para garantizar tu aprendizaje.</p>
-</section>
-
-<!-- SECCIÓN 3 -->
-<section>
-    <h2>Opiniones de alumnos</h2>
-    <p>⭐⭐⭐⭐⭐ “Aprendí desde cero y ahora uso Excel en mi trabajo.”</p>
-    <p>⭐⭐⭐⭐⭐ “Clases muy claras y profesor muy paciente.”</p>
-</section>
-
-<!-- FORMULARIO -->
-<section>
-    <h2>Solicita información</h2>
-    <input type="text" placeholder="Tu nombre">
-    <input type="text" placeholder="Tu teléfono">
-    <textarea placeholder="Tu mensaje"></textarea>
-</section>
-
-<!-- BOTONES FIJOS -->
-<div class="cta-fixed">
-    <button class="whatsapp">Quiero información por WhatsApp</button>
-    <button class="llamar">Llamar ahora</button>
-</div>
-
-</body>
-
-/* Contenedor horizontal del badge + botón */
+/* Badge + botón en línea */
 .precio-row {
     display: flex;
     justify-content: center;
@@ -84,7 +29,15 @@
     margin-top: 10px;
 }
 
-/* Botón inline con icono */
+.precio {
+    background: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Botón WhatsApp inline */
 .btn-w-inline {
     background: #25D366;
     color: white;
@@ -99,10 +52,48 @@
     white-space: nowrap;
 }
 
-/* Icono pequeño */
 .w-icon {
     width: 16px;
     height: 16px;
 }
-</html>
 
+/* Beneficios */
+.beneficios {
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Botones fijos */
+.cta-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.cta-fixed button {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    color: white;
+}
+
+.cta-fixed .whatsapp {
+    background: #25D366;
+}
+
+.cta-fixed .llamar {
+    background: #007BFF;
+}
