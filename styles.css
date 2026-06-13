@@ -1,4 +1,5 @@
 /* CONTENEDOR PRINCIPAL */
+
 .container {
     max-width: 480px;
     margin: 0 auto;
@@ -71,7 +72,8 @@ h1 {
 /* SECCIONES */
 section {
     max-width: 480px;
-    margin: 25px auto;
+       margin: 12px auto 25px;
+
 }
 
 section h2,
