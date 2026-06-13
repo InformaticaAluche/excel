@@ -8,15 +8,10 @@
     width: 100%;
     max-width: 480px;
     height: auto;
-    max-height: 220px;
-    object-fit: cover;
-    object-position: center;
     border-radius: 8px;
     display: block;
     margin: 0 auto;
 }
-
-
 
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
