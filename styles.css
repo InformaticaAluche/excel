@@ -7,13 +7,15 @@
 .hero img {
     width: 100%;
     max-width: 480px;
-    height: 160px !important;
-    object-fit: cover !important;
-    object-position: bottom center !important;
+    height: auto;
+    max-height: 220px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 8px;
     display: block;
     margin: 0 auto;
 }
+
 
 
 body {
