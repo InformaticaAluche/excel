@@ -15,8 +15,8 @@
 
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: red !important;
 }
-
 
 h1 {
     font-size: 26px;
