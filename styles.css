@@ -1,23 +1,26 @@
+/* CONTENEDOR PRINCIPAL */
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /* HERO */
 .hero {
     text-align: center;
-    padding: 10px 20px; /* top-bottom 10px, left-right 20px */
+    padding: 10px 0;
 }
 
 .hero-img {
     width: 100%;
     max-width: 480px;
     height: auto;
-    max-height: 220px;
-    object-fit: cover;
-    object-position: center;
     border-radius: 8px;
     display: block;
     margin: 0 auto;
 }
 
-
-/* Títulos */
+/* TÍTULOS */
 h1 {
     font-size: 26px;
     margin-top: 15px;
@@ -29,7 +32,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Badge + botón en línea */
+/* PRECIO + BOTÓN */
 .precio-row {
     display: flex;
     justify-content: center;
@@ -46,7 +49,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Botón WhatsApp inline */
 .btn-w-inline {
     background: #25D366;
     color: white;
@@ -61,35 +63,38 @@ h1 {
     white-space: nowrap;
 }
 
-/* Icono pequeño */
 .w-icon {
     width: 16px;
     height: 16px;
 }
 
-/* Beneficios */
-.beneficios {
-    margin-top: 12px;
-    font-size: 15px;
-}
-
-/* Secciones */
+/* SECCIONES */
 section {
-    padding: 20px;
+    max-width: 480px;
+    margin: 25px auto;
 }
 
-section h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
+section h2,
+section p {
+    text-align: center;
 }
 
-/* Botones fijos */
+/* LISTAS PROFESIONALES */
+section ul {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 420px;
+    padding-left: 20px;
+}
+
+/* BOTONES FIJOS */
 .cta-fixed {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     display: flex;
+    z-index: 999;
 }
 
 .cta-fixed button {
@@ -98,6 +103,7 @@ section h2 {
     font-size: 16px;
     border: none;
     color: white;
+    font-weight: bold;
 }
 
 .cta-fixed .whatsapp {
