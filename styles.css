@@ -13,11 +13,7 @@
     margin: 0 auto;
 }
 
-body {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background: red !important;
-}
-
+/* Títulos */
 h1 {
     font-size: 26px;
     margin-top: 15px;
@@ -61,6 +57,7 @@ h1 {
     white-space: nowrap;
 }
 
+/* Icono pequeño */
 .w-icon {
     width: 16px;
     height: 16px;
