@@ -1,14 +1,8 @@
 /* HERO */
 .hero {
     text-align: center;
-    padding: 20px;
+    padding: 10px 20px; /* top-bottom 10px, left-right 20px */
 }
-
-.hero {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 
 .hero-img {
     width: 100%;
