@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mecanografía Verano 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Curso de Mecanografía Verano 2026</h1>
+  <p>Escritura rápida · Técnica correcta</p>
+
+  <!-- ICONOS REDONDOS -->
+  <div class="botones-contacto-header">
+    <a href="tel:+34917194243" class="icono-circular icono-telefono">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.1 4.18 2 2 0 0 1 5.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </a>
+
+    <a href="https://wa.me/34640893516?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20curso%20de%20Mecanograf%C3%ADa." class="icono-circular icono-whatsapp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 32 32">
+        <path d="M16.04 3C9.4 3 4 8.4 4 15.04c0 2.64.84 5.12 2.28 7.16L4 29l7.04-2.28c1.96 1.28 4.32 2 6.96 2 6.64 0 12.04-5.4 12.04-12.04C30.04 8.4 22.68 3 16.04 3zm0 22.04c-2.24 0-4.32-.72-6.04-1.96l-.44-.28-4.16 1.32 1.36-4.04-.28-.44A10.1 10.1 0 0 1 6 15.04c0-5.56 4.48-10.04 10.04-10.04S26.08 9.48 26.08 15.04 21.6 25.04 16.04 25.04zm5.2-7.52c-.28-.16-1.64-.84-1.88-.92-.24-.08-.4-.12-.56.12-.16.24-.64.92-.8 1.12-.16.2-.32.24-.6.08-.28-.16-1.16-.44-2.2-1.4-.8-.72-1.36-1.6-1.52-1.88-.16-.28-.02-.44.12-.6.12-.12.28-.32.4-.48.12-.16.16-.28.24-.48.08-.2.04-.36-.02-.52-.08-.16-.56-1.36-.76-1.88-.2-.48-.4-.4-.56-.4h-.48c-.16 0-.52.08-.8.36-.28.28-1.04 1-1.04 2.44 0 1.44 1.08 2.84 1.24 3.04.16.2 2.12 3.24 5.16 4.52.72.32 1.28.52 1.72.68.72.24 1.36.2 1.88.12.6-.08 1.84-.76 2.12-1.48.28-.72.28-1.32.2-1.48-.08-.16-.24-.24-.52-.4z"/>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<div class="contenedor">
+
+<!-- ⭐ SECCIÓN 1 — TARJETAS -->
+<div class="seccion-color-1">
+<section class="tarjetas">
+
+  <div class="tarjeta">
+    <img src="images/meca.png" alt="Curso de mecanografía para jóvenes en Madrid">
+    <h3>Mecanografía</h3>
+    <p>Escritura rápida hoy, mejores trabajos mañana</p>
+
+    <p class="asistencia">Asistencia recomendada: 1h diaria</p>
+
+    <p class="precio">199 € · 20 h</p>
+  </div>
+
+  <div class="tarjeta">
+    <img src="images/meca_ofi.png" alt="Curso combinado de informática para jóvenes en Madrid">
+    <h3>Mecanografía + Ofimática</h3>
+    <p>Mejora la escritura y las tareas escolares</p>
+
+    <p class="asistencia">Asistencia recomendada: 2h · 2 días/semana</p>
+
+    <p class="precio">199 € · 20 h</p>
+  </div>
+
+</section>
+</div>
+
+<!-- ⭐ SECCIÓN 2 — FORMULARIO -->
+<div class="seccion-color-2">
+<section class="formulario" id="formulario">
+  <h2>Reserva tu plaza</h2>
+
+  <form action="https://api.staticforms.xyz/submit" method="post">
+    <input type="hidden" name="accessKey" value="sf_9e534b99d00be1117c17d81c">
+    <input type="hidden" name="redirectTo" value="https://informaticaaluche.github.io/cursos-de-verano-26/gracias.html">
+
+    <input type="text" name="name" placeholder="Nombre del alumno" required>
+    <input type="text" name="parent" placeholder="Nombre del padre/madre" required>
+    <input type="tel" name="phone" placeholder="Teléfono" required>
+
+    <select name="curso" required>
+      <option value="">Selecciona un curso</option>
+      <option value="Mecanografía">Mecanografía</option>
+      <option value="Mecanografía + Ofimática">Mecanografía + Ofimática</option>
+    </select>
+
+    <select name="horario" required>
+      <option value="">Selecciona un horario</option>
+      <option value="Mañanas">Mañanas</option>
+      <option value="Tardes">Tardes</option>
+    </select>
+
+    <label class="check-legal">
+      <input type="checkbox" name="privacy" required>
+      <span>He leído y acepto la Política de privacidad.</span>
+    </label>
+
+    <button type="submit">Enviar solicitud</button>
+  </form>
+
+</section>
+</div>
+
+<!-- ⭐ BENEFICIOS -->
+<div class="seccion-color-1">
+<section class="beneficios-minimal">
+    <h2>Beneficios del curso</h2>
+
+    <p><strong>⚡ Velocidad y precisión</strong><br>
+    <span class="subtexto">Escriben más rápido, con menos errores y mejoran su rendimiento en todas las asignaturas.</span></p>
+
+      <p><strong>💻 Autonomía digital</strong><br>
+    <span class="subtexto">Imprescindible para secundaria y bachillerato.</span></p>
+
+    <p><strong>🧍‍♂️ Hábitos correctos</strong><br>
+    <span class="subtexto">Corrigen malos hábitos como mirar el teclado o escribir con dos dedos, y adoptan técnica profesional desde el primer día.</span></p>
+
+    <p><strong>📈 Resultados visibles</strong><br>
+    <span class="subtexto">Seguimiento individual y resultados visibles a diario, para que las familias vean la evolución desde la primera semana.</span></p>
+
+</section>
+</div>
+
+<!-- ⭐ CURSO 1 -->
+<div class="seccion-color-2">
+<section class="extra-bloque">
+    <h2>🔵 CURSO — Mecanografía de 9–16 años (Exclusivo)</h2>
+
+    <p><strong>Ideal para:</strong><br>
+    Jóvenes que quieren aprender a escribir rápido, con buena técnica y sin mirar el teclado.</p>
+
+    <h3>Incluye</h3>
+    <ul>
+
+    <li><strong>Técnica correcta desde cero</strong> — Aprenden postura, colocación de manos y método profesional.</li>
+    <li><strong>Ejercicios progresivos</strong> — Actividades que aumentan dificultad de forma natural y motivadora.</li>
+    <li><strong>Resultados visibles cada día</strong> — Mejoran en velocidad y precisión desde las primeras clases.</li>
+    <li><strong>Corrección individual</strong> — Ajustes personalizados para eliminar malos hábitos rápidamente.</li>
+    <li><strong>Materiales incluidos</strong> — Todo preparado para que solo tengan que venir y aprender.</li>
+    <li><strong>Profesor especializado en jóvenes</strong> — Enseñanza adaptada a su edad, ritmo y forma de aprender.</li>
+</ul>
+
+    <h3>Resultados esperados</h3>
+    <ul>
+        <li>Aumento notable de velocidad</li>
+        <li>Reducción de errores</li>
+        <li>Mayor autonomía en trabajos escolares</li>
+    </ul>
+
+    <p><strong>Asistencia recomendada:</strong><br>
+    1h diaria</p>
+
+    <a class="boton-extra" href="#formulario">👉 Quiero este curso</a>
+</section>
+</div>
+
+<!-- ⭐ CURSO 2 -->
+<div class="seccion-color-1">
+<section class="extra-bloque">
+    <h2>🟢 CURSO — Mecanografía + Ofimática Junior</h2>
+
+    <p><strong>Perfecto para:</strong><br>
+    Alumnos a los que la mecanografía sola se les hace pesada o quieren alternar con Ofimática.</p>
+
+    <h3>Estructura</h3>
+    <ul>
+        <li>50% Mecanografía</li>
+        <li>50% Ofimática (Word, presentaciones, archivos, tareas reales)</li>
+    </ul>
+
+    <h3>Incluye</h3>
+<ul>
+      <li><strong>Escritura correcta</strong> — Mejoran velocidad, precisión y técnica mientras alternan con tareas prácticas.</li>
+    <li><strong>Creación de documentos</strong> — Aprenden a hacer trabajos escolares bien presentados y con formato profesional.</li>
+    <li><strong>Presentaciones básicas</strong> — Diseñan diapositivas claras y limpias para exponer en clase.</li>
+    <li><strong>Organización de archivos</strong> — Guardan, ordenan y gestionan documentos como en un entorno real.</li>
+    <li><strong>Mini proyectos diarios</strong> — Actividades cortas que combinan mecanografía + ofimática con resultados visibles cada día.</li>
+</ul>
+
+    <p><strong>Beneficio clave:</strong><br>
+    👉 Mantiene la motivación alta y combina habilidad + práctica real.</p>
+<br>
+    <p><strong>Asistencia recomendada:</strong><br>
+    2h · 2 días/semana</p>
+
+    <a class="boton-extra" href="#formulario">👉 Quiero el combinado</a>
+</section>
+</div>
+
+<!-- ⭐ PRECIOS -->
+<div class="seccion-color-2">
+<section class="extra-bloque">
+    <h2>💶 Precios</h2>
+    <ul>
+        <li>Curso de Mecanografía (exclusivo): 👉 199€</li>
+        <li>Curso Mecanografía + Ofimática: 👉 199€ </li>
+        <li>Matrícula: 👉 Gratis en verano</li>
+    </ul>
+</section>
+</div>
+
+<!-- ⭐ UBICACIÓN -->
+<div class="seccion-color-1">
+<section class="extra-bloque">
+    <h2>📍 Ubicación</h2>
+    <p>Clases presenciales en Aluche (Madrid)<br>
+    Aula equipada · Ambiente seguro · Fácil acceso en transporte público</p>
+    <a class="boton-extra" href="https://maps.google.com" target="_blank">👉 Ver cómo llegar</a>
+</section>
+</div>
+
+<!-- ⭐ WHATSAPP -->
+<div class="seccion-color-2">
+<section class="extra-bloque">
+    <h2>📞 Reserva tu plaza</h2>
+
+    <p>WhatsApp directo:</p>
+
+    <a href="https://wa.me/34640893516?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20curso%20de%20Mecanograf%C3%ADa."
+       style="background:#007bff;color:white;padding:10px 16px;border-radius:6px;
+              text-decoration:none;font-weight:600;display:inline-flex;align-items:center;
+              gap:8px;margin-top:12px;">
+
+      Enviar mensaje
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+           alt="WhatsApp" style="width:20px;height:20px;">
+    </a>
+
+</section>
+</div>
+
+<!-- ⭐ FAQ -->
+<div class="seccion-color-1">
+<section class="extra-bloque">
+    <h2>❓ Preguntas frecuentes</h2>
+
+    <p><strong>¿Es necesario que el niño tenga experiencia previa?</strong><br>
+    No, empezamos desde cero con técnica guiada.</p>
+
+    <p><strong>¿Qué pasa si la mecanografía se le hace pesada?</strong><br>
+    Para eso está el curso combinado Mecanografía + Ofimática.</p>
+
+    <p><strong>¿Edad mínima y máxima?</strong><br>
+    De 9 a 16 años.</p>
+
+    <p><strong>¿Necesita traer portátil?</strong><br>
+    No, nosotros proporcionamos todo.</p>
+
+    <p><strong>¿Cuándo se ven resultados?</strong><br>
+    En 3–4 semanas ya se nota una mejora clara.</p>
+</section>
+</div>
+
+</div>
+
+<footer>
+  <div class="logo-footer">
+    <img src="images/logo_q.png" alt="Informática Aluche">
+  </div>
+
+  <p class="footer-text">
+    © 2026 Informática Q Aluche · Madrid<br>
+    <a href="https://informaticaaluche.com/aviso-legal/" target="_blank">Aviso legal</a> · 
+    <a href="https://informaticaaluche.com/politica-privacidad/" target="_blank">Política de privacidad</a> · 
+    <a href="https://informaticaaluche.com/politica-de-cookies/" target="_blank">Política de cookies</a> · 
+    <a href="https://informaticaaluche.com/accesibilidad/" target="_blank">Accesibilidad</a>
+  </p>
+</footer>
+
+</body>
+</html>
