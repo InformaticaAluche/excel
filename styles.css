@@ -309,3 +309,9 @@ body {
     margin: 0;
     padding: 0;
 }
+.check-legal {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
