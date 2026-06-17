@@ -320,5 +320,27 @@ body {
   white-space: nowrap;
   gap: 6px;
 }
+.check-legal {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.check-legal span {
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .check-legal {
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  .check-legal span {
+    font-size: 11px;
+  }
+}
 
 
