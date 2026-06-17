@@ -341,6 +341,10 @@ body {
   .check-legal span {
     font-size: 11px;
   }
+   .seccion-precios {
+  margin-top: 10px !important; /* Ajusta a tu gusto */
+}
+
 }
 
 
