@@ -314,4 +314,11 @@ body {
   align-items: center;
   gap: 6px;
 }
+.check-legal {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 6px;
+}
+
 
